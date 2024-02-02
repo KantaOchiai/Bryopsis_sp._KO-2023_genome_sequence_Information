@@ -1,0 +1,92 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=21;
+TAXLABELS
+[1] 'Auxenochlorella_protothecoides'
+[2] 'Arabidopsis_thaliana'
+[3] 'Bathycoccus_prasinos'
+[4] 'Bryopsis_sp.'
+[5] 'Chara_braunii'
+[6] 'Caurelpa_lentillifera'
+[7] 'Chloropicon_primus'
+[8] 'Chlamydomonas_reinhardtii'
+[9] 'Coccomyxa_subellipsoidea_C-169'
+[10] 'Chlorella_vulgaris'
+[11] 'Dunaliella_salina'
+[12] 'Klebsormidium_nitens'
+[13] 'Monoraphidium_neglectum'
+[14] 'Micromonas_pusilla_CCMP1545'
+[15] 'Ostreobium_quekettii'
+[16] 'Ostreococcus_tauri'
+[17] 'Pleodorina_starrii'
+[18] 'Pedinophyceae_sp._YPF-701'
+[19] 'Raphidocelis_subcapitata'
+[20] 'Ulva_mutabilis'
+[21] 'Volvox_carteri'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=21 nsplits=56;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 5,
+	100	 12,
+	90	 5 12,
+	100	 2 5 12,
+	100	 3,
+	100	 16,
+	100	 3 16,
+	100	 14,
+	100	 3 14 16,
+	100	 7,
+	93	 3 7 14 16,
+	100	 2 3 5 7 12 14 16,
+	100	 18,
+	93	 2 3 5 7 12 14 16 18,
+	100	 4,
+	100	 6,
+	100	 4 6,
+	100	 15,
+	100	 4 6 15,
+	100	 20,
+	80	 4 6 15 20,
+	100	 8,
+	100	 17,
+	100	 21,
+	100	 17 21,
+	100	 8 17 21,
+	100	 11,
+	92	 8 11 17 21,
+	100	 13,
+	100	 19,
+	100	 13 19,
+	100	 8 11 13 17 19 21,
+	91	 4 6 8 11 13 15 17 19 20 21,
+	100	 1 9 10,
+	100	 9,
+	100	 1 10,
+	100	 10,
+	100	 1,
+	6	 2 3 5 12 14 16,
+	9	 8 11 13 17 19 20 21,
+	8	 8 13 17 19 21,
+	8	 2 12,
+	1	 1 8 9 10 11 13 17 19 20 21,
+	2	 2 5,
+	7	 18 20,
+	5	 2 3 5 7 12 14 16 18 20,
+	11	 4 6 8 11 13 15 17 19 21,
+	0	 4 6 15 18 20,
+	2	 1 2 3 5 7 9 10 12 14 16,
+	2	 1 9 10 20,
+	1	 4 15,
+	2	 2 5 7 12,
+	1	 11 13 19,
+	0	 8 11 13 17 18 19 20 21,
+	0	 1 8 9 10 11 13 17 19 21,
+;
+END; [Splits]
+
